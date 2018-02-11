@@ -7,6 +7,7 @@
     <title>Ahumart Patagonia</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -24,6 +25,10 @@
                         <div class="quienes-somos-content">
                             <h2>Jerky Ahumart</h2>
                             <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no seaest Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua, ugo consetetur Lorem Ipsum.</p>
+                            <div class="box-img ornamento text-center">
+                                <img class="img-ornamento" src="assets/img/ornamento.png" alt="">
+                            </div>
+                            
                             <h2 class="text-uppercase">Orégano</h2>
                             <h2 class="text-uppercase">Merkén</h2>
                         </div>
@@ -44,7 +49,7 @@
                             <h3 class="subtitle text-center">Receta uno</h3>
                             <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
                             <div class="box-link text-center">
-                                <a href="">Ver</a>
+                                <a href="#" data-src="#modal-receta" data-fancybox>Ver</a>
                             </div>    
                         </div>
                     </div>
@@ -56,7 +61,7 @@
                             <h3 class="subtitle text-center">Receta dos</h3>
                             <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna al.</p>
                             <div class="box-link text-center">
-                                <a href="">Ver</a>
+                                <a href="#" data-src="#modal-receta" data-fancybox>Ver</a>
                             </div>    
                         </div>
                     </div>
@@ -68,7 +73,7 @@
                             <h3 class="subtitle text-center">Receta tres</h3>
                             <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
                             <div class="box-link text-center">
-                                <a href="">Ver</a>
+                                <a href="#" data-src="#modal-receta" data-fancybox>Ver</a>
                             </div>   
                         </div>
                     </div>
@@ -87,6 +92,31 @@
                 </div>
             </div> 
         </section>
+        <div id="modal-receta" style="display: none;">
+            <a href="#" class="box-ico-share"></a>
+            <h1 class="title text-center">Receta #</h1>
+            <div class="box-img">
+                <div class="img"></div>
+            </div>
+            <div class="box-content">
+                <h3 class="subtitle">Ingredientes</h3>
+                <ul class="lista-ingredientes">
+                    <li>- 2 cditas de té repletas de sal</li>
+                    <li>- 1 cdita de té repleta de pimienta</li>
+                    <li>- Media cdita de té de Humo líquido (le da ese olorcito ahumado que no se puede lograr con el horno)</li>
+                    <li>- Media cdita de té de polvo de aji rocoto (picante, pueden reemplazar con el de su preferencia)</li>
+                    <li>- Medio sobre de caldo saborizante de verduras</li>
+                    <li>- Restos de adobo mexicano para tacos (quién sabe que habrá ahi adentro!!!)</li>
+                    <li>- Un fondo de frizé que dejaron los pibes en la heladera</li>
+                    <li>- Media taza de leche</li>
+                </ul>
+                <h3 class="subtitle">Preparación</h3>
+                <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no seaest Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua, ugo consetetur Lorem Ipsum.</p>
+            </div>
+            <div class="next">
+                <a href="">Siguiente</a>
+            </div>
+    </div>
    
     <footer>
         <div class="container">
@@ -110,5 +140,8 @@
             </div>
         </div>
     </footer> 
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>     

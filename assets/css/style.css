@@ -220,13 +220,19 @@ body {
     top: 0;
     right: 50%;
 }
+.jerky .box-img.ornamento {
+    display: none;
+}
+.jerky .box-img .img-ornamento {
+    width: 30%;
+}
 
 .bg-4 {
     background-image: url('../img/bg-fire.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 70px 0;
+    padding-top: 70px;
 }
 .bg-4 .box-img.border {
     border: 1px solid  #E6E6E6;
@@ -281,6 +287,7 @@ body {
     margin-top: 50px;
     text-align: center;
     float: right;
+    padding-bottom: 70px;
 }
 .number {
     border: 4px solid #fff; 
@@ -307,6 +314,79 @@ body {
 .number:hover a:hover {
     text-decoration: none;
 }
+
+/* Modal receta */
+#modal-receta {
+    padding: 50px;
+    padding-top: 50px;
+    width: 50%;
+    position: relative;
+    padding-bottom: 200px;
+}
+.box-ico-share {
+    position: absolute;
+    background-image: url(../img/ico-share.png);
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    right:50px ;
+    top: 20px;
+}
+.img {
+    background-color: #d8d8d8;
+    height: 250px;
+}
+#modal-receta .title {
+    padding-bottom: 40px;
+    font-size: 40px; 
+    padding-top: 70px;
+}
+#modal-receta .subtitle {
+    font-size: 24px;
+    padding-top: 40px;
+    padding-left: 15px;
+    font-family: 'Roboto Slab';
+}
+
+#modal-receta .bajada {
+    padding: 15px;
+}
+#modal-receta .lista-ingredientes {
+    list-style: none;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Roboto Slab';
+    padding-bottom: 50px;
+}
+
+#modal-receta .next {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    text-align: right;
+    padding-top: 60px;
+    font-size: 24px;
+}
+#modal-receta .next a {
+    background-image: url('../img/ico-next.png');
+    padding-right: 50px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    color: #171719;
+    font-family: 'Arvo';
+    transition: all ease-in-out .3s;
+}
+#modal-receta .next a:hover {
+    text-decoration: none;
+    background-position: 100%;
+    
+}
+.fancybox-close-small {
+    display: none;
+}
+
 /* Footer */
 
 footer {
@@ -330,6 +410,13 @@ footer a:hover {
 footer a:first-child {
     margin-right: 20px;
 }
+
+
+
+
+
+
+
 @media screen and ( max-width:991px) {
     .jerky .jerky-bg {
         position: relative;
@@ -339,6 +426,10 @@ footer a:first-child {
     }
     .bg-4 .bajada {
         min-height: 150px;
+    }
+    #modal-receta {
+        padding: 50px;
+        width: 90%;
     }
 }
 
@@ -427,8 +518,10 @@ footer a:first-child {
     .box-img.quienes-somos-avatar img {
         width: 50%;
     } 
+   
     .bg-4 {
         padding-top: 40px;
+        /* background-image: url('../img/fondo.png'); */
     }
     .bg-4 .box-img.border {
         margin-top: 45px;
@@ -442,13 +535,36 @@ footer a:first-child {
     .bg-4 .bajada {
         min-height: 100px;
     }
-
-
-
-
+    #modal-receta {
+        padding: 20px;
+        padding-bottom: 70px;
+    }
+    #modal-receta .title {
+        font-size: 30px;
+    }
+    #modal-receta .subtitle {
+        font-size: 18px; 
+    }
+    #modal-receta .bajada, #modal-receta .lista-ingredientes  {
+        font-size: 14px;
+        line-height: 27px;
+    }
+    #modal-receta .next {
+        text-align: center;
+        padding-top: 70px;
+        position: relative;
+        right: 0;
+    }
     footer p {
         margin: 10px 0;
     }
- 
+}
 
+@media screen and ( max-width:640px) { 
+    .jerky .box-img.ornamento {
+        display: block;
+    }
+    .jerky .bajada {
+        padding-bottom: 0;
+    }
 }
