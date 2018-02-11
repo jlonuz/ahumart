@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+
+/* * {box-shadow: inset 0 0 1px 0 rgba(0,0,0,.3); background-color: rgba(0,0,0,.03);} */
+
+/* Helpers */
+.pb-40 {
+    padding-bottom: 40px;
+}
+/* End */
+
+header {
+    background-color: #D9273A;
+    height: 150px;
+}
+
+body {
+    margin: 0;
+}
+.bg-home-1 {
+    background-image: url('../img/wood-home.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 200px;
+
+}
+.bg-home-2 {
+    background-image: url('../img/textura-madera.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box-img img {
+    max-width: 100%;
+    width: 100%;
+}
+.box-img .pack {
+    width: 90%;
+}
+.box-img .logo {
+    width: 65%;
+    margin-top: 90px;
+}
+.boxes-home {
+    margin-top: -100px;
+}
+.box-link {
+    cursor: pointer;
+    display: block;
+}
+.box-link:hover {
+    text-decoration: none;
+}
+.box-title {
+    background-color: #D9273A;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.box-link h2 {
+    margin: 0;
+    font-family: 'Arvo';
+    font-weight: 400;
+}
+
+.mercado-paula {
+    padding: 100px 0;
+}
+.mercado-paula-logo img {
+    border: 10px solid #1E6030;
+    border-radius: 100%;
+}
+.title {
+    font-size: 48px;
+    font-family: 'Arvo';
+    font-weight: 400;
+}
+.bajada {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    padding-top: 20px;
+}
+.btn-see-more {
+    display: inline-block;
+    background-color: #D9273A;
+    padding: 10px 50px;;
+    color: #fff;
+    font-size: 18px;
+}
+.btn-see-more:hover {
+    text-decoration: none;
+    opacity: .8;
+    color: #fff;  
+}
+.sidebar {
+    margin-top: 100px;
+}
+.shadow {
+    opacity: 0.43;
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 75%);
+    border: 1px solid #979797;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.cervezas-home {
+    background-image: url('../img/cervezas.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 40px;
+}
+.cervezas-home .title {
+    color: #fff;
+    padding: 218px 15px 15px;
+    position: relative;
+    z-index: 3;
+}
+
+footer {
+    background: #171719;
+    color: #B6B5B5;
+    font-family: 'Arvo';
+    font-size: 16px;
+    line-height: 18px;
+    padding: 30px;
+}
+
+.fb-page {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+footer a {
+    display: inline-block;
+}
+footer a:hover {
+    text-decoration: none;
+} 
+footer a:first-child {
+    margin-right: 20px;
+}
+
+@media screen and ( max-width:767px) {
+    .bg-home-2 {
+        padding-top: 20px;
+    }
+    .boxes-home {
+        margin-top: 0;
+        margin: 20px 0;
+    }
+    .box-link {
+        margin: 20px 0;
+    }
+    .box-title h2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .mercado-paula {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .mercado-paula-logo {
+        text-align: center;
+    }
+    .mercado-paula-logo img {
+        width: 50%;
+    }
+    .title {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    .mercado-paula .bajada {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .box-btn {
+        text-align: center;
+    }
+    .cervezas-home {
+        margin-top: 70px;
+    }
+    .sidebar {
+        margin-top: 0;
+    }
+    footer p {
+        margin: 10px 0;
+    }
+ 
+
+}
