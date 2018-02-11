@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 
-/* * {box-shadow: inset 0 0 1px 0 rgba(0,0,0,.3); background-color: rgba(0,0,0,.03);} */
+/* {box-shadow: inset 0 0 1px 0 rgba(0,0,0,.3); background-color: rgba(0,0,0,.03);} */
 
 /* Helpers */
 .pb-40 {
@@ -11,7 +11,9 @@
 
 header {
     background-color: #D9273A;
-    height: 150px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 body {
@@ -122,6 +124,190 @@ body {
     position: relative;
     z-index: 3;
 }
+/* Quiénes Somos */
+.bg-home-2.quienes-somos {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.quienes-somos .quienes-somos-1 {
+    background-image: url('../img/foto-1.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    height: 100%;
+    width: 51%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+
+.quienes-somos .quienes-somos-2 {
+    background-image: url('../img/foto-2.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    height: 101%;
+    width: 51%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.quienes-somos-content {
+    padding: 50px;
+}
+.quienes-somos-content h2 {
+    font-size: 30px;
+    line-height: 49px;
+    font-family: 'Arvo'
+}
+.quienes-somos-content .bajada {
+    padding-bottom: 40px;
+}
+.quienes-somos-content .box-img {
+    margin-bottom: 40px;
+}
+.bg-3 {
+    background-image: url('../img/foto-fondo.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
+}
+
+.bg-3 .quienes-somos-avatar  img {
+    border-radius: 100%;
+    border: 10px solid #D9273A;
+    margin-bottom: 40px;
+    width: 65%;
+}
+.bg-3 .title {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Arvo';
+    padding: 50px 0;
+}
+.bg-3 .subtitle {
+    font-family: 'Arvo';
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+}
+.bg-3 .bajada {
+    font-family: 'Roboto Slab';
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 60px;
+    padding: 0 10px;
+}
+
+/* Jerky */
+
+.bg-home-2.jerky {
+    position: relative;
+}
+.jerky .jerky-bg {
+    background-image: url('../img/principal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    height: 100%;
+    width: 51%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+
+.bg-4 {
+    background-image: url('../img/bg-fire.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+.bg-4 .box-img.border {
+    border: 1px solid  #E6E6E6;
+}
+
+.bg-4 .title {
+    color: #fff;
+    font-size: 40px; 
+    line-height: 49px;
+    font-family: 'Arvo';
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+.bg-4 .receta {
+    background-color: #E6E6E6;   
+    padding: 15px;
+    min-height: 200px;
+}
+
+.bg-4 .subtitle {
+    font-family: 'Arvo';
+    font-size: 12px;
+    line-height: 21px;
+    color: #272727;
+}
+.bg-4 .bajada {
+    font-family: 'Roboto Slab';
+    color: #272727;
+    font-size: 12px;
+    line-height: 17px;
+    min-height: 100px;
+}
+.bg-4 .receta .box-link {
+    margin-top: 30px;
+   
+}
+.bg-4 .receta a {
+    display: inline-block;
+    background-color: #171719;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    border:1px solid #171719;
+    font-family: 'Arvo';
+}
+.bg-4 .receta a:hover {
+    background-color: #E6E6E6;
+    color: #171719;
+    text-decoration: none;
+}
+.box-numbers {
+    margin-top: 50px;
+    text-align: center;
+    float: right;
+}
+.number {
+    border: 4px solid #fff; 
+    color: #fff;
+    margin-left: 15px;
+    display: inline-block;
+    font-family: 'Arvo';
+    font-weight: 400;
+    font-size: 24px;
+}
+.number a {
+    display: inline-block;
+    padding: 10px 22px;;
+    color: #fff;
+    outline: none;
+}
+.number:hover {
+    text-decoration: none;
+    background-color: #fff;
+}
+.number:hover a {
+    color: #171719;
+}
+.number:hover a:hover {
+    text-decoration: none;
+}
+/* Footer */
 
 footer {
     background: #171719;
@@ -130,10 +316,6 @@ footer {
     font-size: 16px;
     line-height: 18px;
     padding: 30px;
-}
-
-.fb-page {
-    margin-bottom: 20px;
 }
 
 footer p {
@@ -147,6 +329,17 @@ footer a:hover {
 } 
 footer a:first-child {
     margin-right: 20px;
+}
+@media screen and ( max-width:991px) {
+    .jerky .jerky-bg {
+        position: relative;
+        height: 360px;
+        right: 0;
+        width: 100%;
+    }
+    .bg-4 .bajada {
+        min-height: 150px;
+    }
 }
 
 @media screen and ( max-width:767px) {
@@ -191,6 +384,68 @@ footer a:first-child {
     .sidebar {
         margin-top: 0;
     }
+    .quienes-somos .quienes-somos-1 {
+        position: relative;
+        height: 367px;
+        right: 0;
+        width: 100%;
+        background-position: top;
+    }
+    .quienes-somos .quienes-somos-2 {
+        position: relative;
+        height: 360px;
+        width: 100%;
+        left: 0;
+        background-position: right;
+    }
+    .quienes-somos-content {
+        padding: 50px 0;
+    }
+    .quienes-somos-content .bajada {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .quienes-somos-content .box-img .cuchillo {
+        width: 100%;
+    }
+
+    .bg-3 .title {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .bg-3 .subtitle {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .bg-3 .bajada {
+        font-size: 14px;
+        line-height: 30px;
+        padding-bottom: 60px;
+    }
+    .box-img.quienes-somos-avatar img {
+        width: 50%;
+    } 
+    .bg-4 {
+        padding-top: 40px;
+    }
+    .bg-4 .box-img.border {
+        margin-top: 45px;
+    }
+    .box-numbers {
+        float: none;
+    }
+    .bg-4 .title {
+        padding-bottom: 0;
+    }
+    .bg-4 .bajada {
+        min-height: 100px;
+    }
+
+
+
+
     footer p {
         margin: 10px 0;
     }
