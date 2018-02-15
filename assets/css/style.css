@@ -34,9 +34,68 @@ body {
     background-position: center;
     background-size: cover;
 }
+.slider-home.home img {
+    height: auto;
+}
+.slider-home .slick-prev {
+    background-image: url(../img/slider-prev.png);
+    background-repeat: no-repeat;
+    background-size: 10px 16px;
+    background-position: center;
+    right: 45%;
+    bottom: 0;
+    z-index: 2;
+    outline: 0;
+    cursor: pointer;
+}
+.slider-home .slick-next {
+    background-image: url(../img/slider-next.png);
+    background-repeat: no-repeat;
+    background-size: 10px 16px;
+    background-position: center;
+    left: 45%;
+    bottom: 0;
+    z-index: 2;
+    outline: 0;
+    cursor: pointer;
+}
+.slider-home .slick-arrow {
+    position: absolute;
+    color: transparent;
+    background-color: transparent;
+    transform: translate(0, -50%);
+    border: none;
+    opacity: 0.7;
+} 
+.slider-home .slick-dots {
+    position: absolute;
+    bottom: -60px;
+    list-style: none;
+    padding-left: 20px;
+    right: 010%;
+    margin-bottom: 20px;
+    font-size: 0;
+    display: inline-block;  
+}
+.slider-home .slick-dots li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.slider-home .slick-dots li.slick-active > button {
+    width: 20px;
+    height: 20px;
+}
+.slider-home .slick-dots li > button  {
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
 .box-img img {
     max-width: 100%;
     width: 100%;
+    min-height: 270px;
 }
 .box-img .pack {
     width: 90%;
@@ -135,7 +194,7 @@ body {
 }
 .quienes-somos .quienes-somos-1 {
     background-image: url('../img/foto-1.png');
-    background-position: right.quienes-somos .quienes-somos-1;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -400,6 +459,120 @@ body {
 .fancybox-close-small {
     display: none;
 }
+/* Dónde encontrarnos */
+.bg-donde-encontrarnos {
+    background-image: url('../img/principal-carne.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0 0;
+}
+.bg-home-2.donde-encontrarnos .bg-white {
+    background-color: #fff;
+    padding: 30px 0;
+}
+.bg-home-2.donde-encontrarnos {
+    padding: 30px 0;
+}
+.bg-home-2.donde-encontrarnos .box-img {
+    border: 1px solid #ededed;
+    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, .2);
+   
+}
+.bg-home-2.donde-encontrarnos .box-img img {
+    max-width: 100%;
+    width: 100%;
+    border: 3px solid #fff;
+    max-height: 200px;
+}
+.bg-home-2.donde-encontrarnos .content {
+    padding: 20px;
+}
+.bg-home-2.donde-encontrarnos .content .title-local {
+    font-size: 30px;
+}
+.bg-home-2.donde-encontrarnos .content .title-local a:after {
+    content: '';
+    background-image: url(../img/slider-prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ededed;
+    background-size: 10px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 100%;
+    padding: 12px;
+    margin-left: 10px;
+    transition: all ease-in-out .3s;
+}
+.bg-home-2.donde-encontrarnos .content .title-local a:hover {
+    text-decoration: none;
+}
+.bg-home-2.donde-encontrarnos .content .title-local a:hover:after {
+    margin-right: 25px;
+    background-color: #007bff;
+}
+.bg-home-2.donde-encontrarnos .content p {
+    font-size: 18px;
+}
+.bg-home-2.donde-encontrarnos .content .rute-local {
+    font-size: 18px;
+}
+.bg-donde-encontrarnos .boxes-home {
+    margin-top: 20px;
+}
+.bg-donde-encontrarnos .box-link .boxes-home .box-img img {
+    max-height: 200px;
+    height: 200px;
+}
+.bg-donde-encontrarnos .box-link h2 {
+    font-size: 20px;
+}
+.bg-donde-encontrarnos .boxes-home .box-title {
+    background-color: #171719;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+.m-show {
+    display: none;
+}
+.bg-donde-encontrarnos .boxes-home .box-title.active{
+    background-color: #D9273A;
+}
+.bg-donde-encontrarnos .subtitle {
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    font-family: 'Arvo';
+    padding-top: 35px;
+}
+.bg-donde-encontrarnos .title {
+    padding: 40px 0 15px;
+    border-bottom: 8px solid #fff;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.bg-donde-encontrarnos .title.elegido {
+    border: none;
+    margin-bottom: 0;
+    padding-top: 100px;
+} 
+.bg-donde-encontrarnos .visit {
+    padding: 20px;
+    border: 5px solid #fff;
+    font-family: 'Arvo';
+    font-size: 24px;
+    color: #fff;
+}
+.bg-donde-encontrarnos .visit.mobile-show {
+    display: none;
+} 
+.bg-donde-encontrarnos .visit h6 {
+    font-size: 18px;
+}
 /* Prensa */
 .bg-4.prensa {
     background-image: url('../img/fondo.png');
@@ -449,7 +622,7 @@ body {
 
 /* Contacto */
 .bg-5 {   
-    background-image: url('../img/fondo.png');
+    background-image: url('../img/fondo-contacto.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -537,11 +710,32 @@ body {
 .bg-home-2.prensa.tienda {
     padding-bottom: 0 !important;
 }
-.banner-tienda {
-    background-image: url('../img/fondo.png');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+.tienda-description {
+    padding: 60px 0;
+}
+.slider-home img {
+   height: 600px;
+   width: 100%;
+}
+.oferta-semanal {
+    padding-bottom: 60px;
+}
+.box-oferta {
+    padding-top: 40px;
+}
+.box-oferta h1.title  {
+    font-family: 'Arvo';
+    font-size: 40px;
+    padding-bottom: 0px;
+}
+.box-oferta .bajada {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto Slab';
+    line-height: 30px;
+}
+.oferta-semanal .title.mobile-show {
+    display: none;
 }
 #map {
     height: 400px;
@@ -594,15 +788,61 @@ footer a:first-child {
     .bg-toro {
         display: none;
     }
+    .box-title {
+        min-height: 100px;
+    }
+    .quienes-somos .quienes-somos-1 {
+        position: relative;
+        height: 367px;
+        right: 0;
+        width: 100%;
+        background-position: top;
+        margin-top: 20px;
+    }
+    .quienes-somos .quienes-somos-2 {
+        position: relative;
+        height: 360px;
+        width: 100%;
+        left: 0;
+        background-position: right;
+    }
+    .quienes-somos-content {
+        padding: 50px 0;
+    }
+    .quienes-somos-content .bajada {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .quienes-somos-content .box-img .cuchillo {
+        width: 100%;
+    }
+    .bg-donde-encontrarnos .subtitle {
+        text-align: center;
+    }
+    .visit.hide-mobile {
+        display: none;
+    }
 }
 
 @media screen and ( max-width:767px) {
+    .bg-home-1 {
+        padding-bottom: 100px;
+    }
     .bg-home-2 {
         padding-top: 20px;
+    }
+    .box-img .pack {
+        width: 100%;
+    }
+    .box-title {
+        min-height: 0;
     }
     .boxes-home {
         margin-top: 0;
         margin: 20px 0;
+    }
+    .logo-hide {
+        display: none;
     }
     .box-link {
         margin: 20px 0;
@@ -614,6 +854,9 @@ footer a:first-child {
     .mercado-paula {
         padding-top: 50px;
         padding-bottom: 30px;
+    }
+    .quienes-somos-content .box-img .cuchillo {
+        width: 50%;
     }
     .mercado-paula-logo {
         text-align: center;
@@ -638,32 +881,7 @@ footer a:first-child {
     .sidebar {
         margin-top: 0;
     }
-    .quienes-somos .quienes-somos-1 {
-        position: relative;
-        height: 367px;
-        right: 0;
-        width: 100%;
-        background-position: top;
-    }
-    .quienes-somos .quienes-somos-2 {
-        position: relative;
-        height: 360px;
-        width: 100%;
-        left: 0;
-        background-position: right;
-    }
-    .quienes-somos-content {
-        padding: 50px 0;
-    }
-    .quienes-somos-content .bajada {
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .quienes-somos-content .box-img .cuchillo {
-        width: 100%;
-    }
-
+   
     .bg-3 .title {
         font-size: 30px;
         line-height: 37px;
@@ -745,6 +963,49 @@ footer a:first-child {
     }
     .bg-home-2.prensa.tienda .box-numbers.dark {
         display: block;
+    }
+    .bg-4.oferta-semanal {
+        background-image: url('../img/fondo.png');
+    }
+    .oferta-semanal .title.mobile-show {
+        display:block;
+    }
+    .box-oferta h1.title  {
+        display: none;
+    }
+    .slider-home img {
+        height: 300px;
+    }
+    .slider-home .slick-next {
+        left: 35%;
+    }
+    .slider-home .slick-prev {
+        right: 35%;
+    }
+    .bg-donde-encontrarnos .visit {
+        display: none;
+    }
+    .bg-donde-encontrarnos .visit.mobile-show {
+        display: block;
+        margin-top: 50px;
+    }
+    .m-hide {
+        display: none;
+    }
+    .m-show {
+        display: block;
+    }
+    .m-show .title.elegido {
+        padding-bottom: 30px;
+    }
+    .bg-donde-encontrarnos {
+        padding-bottom: 70px;
+    }
+    .bg-home-2.donde-encontrarnos .content .title-local {
+        padding-top: 20px;
+    }
+    .bg-home-2.donde-encontrarnos .bg-white {
+        padding-bottom: 0;
     }
     footer p {
         margin: 10px 0;

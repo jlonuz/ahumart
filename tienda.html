@@ -16,12 +16,43 @@
     <header>
         <h1>header</h1>
     </header>
-    <section class="slider-home">
-        <div><img src="assets/img/banner.png" alt=""></div>
-        <div><img src="assets/img/banner.png" alt=""></div>
-        <div><img src="assets/img/banner.png" alt=""></div>
+    <div class="slider-home">
+        <div class="box-img"><img src="assets/img/banner.png" alt=""></div>
+        <div class="box-img"><img src="assets/img/banner.png" alt=""></div>
+        <div class="box-img"><img src="assets/img/banner.png" alt=""></div>
+    </div>
+    
+    <section class="bg-home-2 tienda">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <div class="tienda-description">
+                        <h1 class="title text-center">Tienda Ahumart</h1>
+                        <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-        
+    <section class="bg-4 oferta-semanal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="title mobile-show">Oferta Semanal</h1>
+                    <div class="cervezas-home">
+                        <div class="shadow"></div>
+                        <h1 class="title">20% Dcto<br>Cervezas Regionales</h1>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="box-oferta">
+                        <h1 class="title">Oferta Semanal</h1>
+                        <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="bg-home-2 prensa tienda">
         <div class="container">
             <h1 class="title text-center">Alguno de nuestros productos</h1>
@@ -74,39 +105,20 @@
         </div> 
     </section>
     <section class="bg-red">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 mt">  
-                        <h3 class="subtitle text-uppercase">Visitanos</h3>
-                        <p>Ignacio Serrano #133<br>Coyhaique, Región de Aysén</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 mt">
-                        <h3 class="subtitle text-uppercase">Horarios</h3>
-                        <p>Lun a Vie 09 - 14hrs. | 15-20hrs. <br>Sábado 09-14 hrs. | 15-20hrs. </p>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 mt">  
+                    <h3 class="subtitle text-uppercase">Visitanos</h3>
+                    <p>Ignacio Serrano #133<br>Coyhaique, Región de Aysén</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 mt">
+                    <h3 class="subtitle text-uppercase">Horarios</h3>
+                    <p>Lun a Vie 09 - 14hrs. | 15-20hrs. <br>Sábado 09-14 hrs. | 15-20hrs. </p>
                 </div>
             </div>
-        </section>
-           
-            <div id="map"></div>
-            <script src="assets/js/main.js"></script>
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvxAUQDlGiF-p4RrwV77pelHBk8clvZLg&callback=initMap">
-            </script>
-    <div id="modal-prensa" style="display: none;">
-        <h1 class="title text-center">Noticia #</h1>
-        <div class="box-img">
-            <div class="img"></div>
         </div>
-        <div class="box-content">
-            <h3 class="subtitle">Preparación</h3>
-            <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no seaest Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua, ugo consetetur Lorem Ipsum.</p>
-            <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no seaest Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua, ugo consetetur Lorem Ipsum.</p>
-        </div>
-        <div class="next">
-            <a href="">Siguiente</a>
-        </div>
-    </div>
+    </section>
+    <div id="map"></div>
     <footer>
         <div class="container">
             <div class="row">
@@ -129,9 +141,12 @@
             </div>
         </div>
     </footer> 
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvxAUQDlGiF-p4RrwV77pelHBk8clvZLg&callback=initMap">
+    </script>
     <script src="assets/js/jquery-3.2.1.js"></script>
     <script src="assets/js/jquery.fancybox.js"></script>
-    <script scr="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>  

@@ -1,7 +1,7 @@
 $(document).ready(function(){
-//   // $('.slider-home').slick({
-//   //   dots: true
-//   // });
+  $('.slider-home').slick({
+    dots: false
+  });
   $("[data-fancybox]").fancybox({
     // Options will go here
   });
