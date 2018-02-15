@@ -124,6 +124,9 @@ body {
     position: relative;
     z-index: 3;
 }
+.fb-page {
+    padding-bottom: 20px;
+}
 /* Quiénes Somos */
 .bg-home-2.quienes-somos {
     position: relative;
@@ -132,7 +135,7 @@ body {
 }
 .quienes-somos .quienes-somos-1 {
     background-image: url('../img/foto-1.png');
-    background-position: top;
+    background-position: right.quienes-somos .quienes-somos-1;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -283,15 +286,24 @@ body {
     color: #171719;
     text-decoration: none;
 }
-.box-numbers {
+.box-numbers, .box-numbers.dark {
     margin-top: 50px;
     text-align: center;
     float: right;
     padding-bottom: 70px;
 }
-.number {
+.number, .box-numbers.dark .number {
     border: 4px solid #fff; 
     color: #fff;
+    margin-left: 15px;
+    display: inline-block;
+    font-family: 'Arvo';
+    font-weight: 400;
+    font-size: 24px;
+}
+.box-numbers.dark .number {
+    border: 4px solid #171719;; 
+    color: ##171719;;
     margin-left: 15px;
     display: inline-block;
     font-family: 'Arvo';
@@ -303,6 +315,9 @@ body {
     padding: 10px 22px;;
     color: #fff;
     outline: none;
+}
+.box-numbers.dark .number a {
+    color: #171719;
 }
 .number:hover {
     text-decoration: none;
@@ -316,7 +331,7 @@ body {
 }
 
 /* Modal receta */
-#modal-receta {
+#modal-receta, #modal-prensa {
     padding: 50px;
     padding-top: 50px;
     width: 50%;
@@ -338,19 +353,18 @@ body {
     background-color: #d8d8d8;
     height: 250px;
 }
-#modal-receta .title {
+#modal-receta .title, #modal-prensa .title {
     padding-bottom: 40px;
     font-size: 40px; 
     padding-top: 70px;
 }
-#modal-receta .subtitle {
+#modal-receta .subtitle, #modal-prensa .subtitle {
     font-size: 24px;
     padding-top: 40px;
     padding-left: 15px;
     font-family: 'Roboto Slab';
 }
-
-#modal-receta .bajada {
+#modal-receta .bajada, #modal-prensa .bajada {
     padding: 15px;
 }
 #modal-receta .lista-ingredientes {
@@ -361,7 +375,7 @@ body {
     padding-bottom: 50px;
 }
 
-#modal-receta .next {
+#modal-receta .next, #modal-prensa .next  {
     position: absolute;
     right: 20px;
     bottom: 50px;
@@ -369,7 +383,7 @@ body {
     padding-top: 60px;
     font-size: 24px;
 }
-#modal-receta .next a {
+#modal-receta .next a, #modal-prensa .next a  {
     background-image: url('../img/ico-next.png');
     padding-right: 50px;
     background-repeat: no-repeat;
@@ -378,7 +392,7 @@ body {
     font-family: 'Arvo';
     transition: all ease-in-out .3s;
 }
-#modal-receta .next a:hover {
+#modal-receta .next a:hover, #modal-prensa .next a:hover {
     text-decoration: none;
     background-position: 100%;
     
@@ -386,7 +400,153 @@ body {
 .fancybox-close-small {
     display: none;
 }
+/* Prensa */
+.bg-4.prensa {
+    background-image: url('../img/fondo.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+.bg-4.prensa .box-numbers , .bg-home-2.prensa .box-numbers.dark  {
+    display: none;
+}
+.bg-4.prensa .receta {
+    background-color: #272727;;   
+    padding: 15px;
+    min-height: 200px;
+}
+.bg-home-2.prensa {
+    padding-bottom: 100px;
+}
+.bg-home-2.prensa .title {
+    padding: 40px 0 15px;
+    border-bottom: 8px solid #272727;
+    margin-bottom: 30px;
+}
+.bg-home-2.prensa .row {
+    padding-bottom: 30px;
+}
+.bg-4.prensa .subtitle {
+    color:#B6B5B5;
+    font-size: 18px;
+    padding-top: 30px;
+}
+.bg-4.prensa .bajada {
+    color: #B6B5B5;
+    font-size: 12px;
+}
+.bg-4.prensa .receta .box-link a  {
+    background-color: #D8D8D8;
+    color: #171719;
+    border: 1px solid transparent;
+}
+.bg-4.prensa .receta .box-link a:hover {
+    color: #d8d8d8;
+    background-color: #171719;
+    border: 1px solid #d8d8d8;
+}
 
+/* Contacto */
+.bg-5 {   
+    background-image: url('../img/fondo.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;
+    position: relative;
+}
+.title.contacto {
+    padding: 30px 0;
+    padding-top: 60px;
+    color: #fff;
+}
+.bg-toro {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+}
+.bg-toro img {
+    width: 50%;
+}
+.box-img.banner-tienda img {
+    height: 200px;
+}
+.box-img.logo img {
+    width: 60%;
+    margin-top: 50px;
+}
+.title-follow {
+    font-size: 30px;
+    color: #B6B5B5;
+    font-family: 'Arvo';
+    margin-bottom: 20px;
+}
+
+.box-img.logo a img {
+    width: 100%;
+    margin-top: 20px;
+}
+.bg-green {
+    background-color: #1E6030;
+    padding: 50px 0;
+    font-family: 'Arvo';
+    font-size: 24px;
+    color: #fff;
+}
+.bg-5 form input {
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    padding-left: 15px;
+    font-family: 'Arvo';
+    font-size: 18px;
+}
+.bg-5 form textarea {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 15px;
+    height: 150px;
+    padding-top: 14px;
+    font-family: 'Arvo';
+    font-size: 18px;
+}
+.bg-5 form .btn-send {
+    background-color: #D9273A;
+    color: #fff;
+    width: 100%;
+    border: transparent;
+}
+.content-follow a {
+    margin-right: 10px;
+    outline: 0;
+
+}
+.content-follow a:hover {
+    text-decoration: none;
+}
+/* Tienda */
+.bg-red {
+    background-color: #D9273A;
+    padding: 50px 0;
+    font-family: 'Arvo';
+    font-size: 24px;
+    color: #fff;
+}
+.bg-home-2.prensa.tienda {
+    padding-bottom: 0 !important;
+}
+.banner-tienda {
+    background-image: url('../img/fondo.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
 /* Footer */
 
 footer {
@@ -427,9 +587,12 @@ footer a:first-child {
     .bg-4 .bajada {
         min-height: 150px;
     }
-    #modal-receta {
+    #modal-receta, #modal-prensa {
         padding: 50px;
         width: 90%;
+    }
+    .bg-toro {
+        display: none;
     }
 }
 
@@ -529,31 +692,59 @@ footer a:first-child {
     .box-numbers {
         float: none;
     }
+    .bg-4.prensa .box-numbers , .bg-home-2.prensa .box-numbers.dark{
+        display: block;
+        float:none;
+    }
+    .bg-4.prensa .box-img.galeria, .bg-home-2.prensa .box-img.galeria {
+        margin-bottom: 30px;
+    }
+    .bg-home-2.prensa .row {
+        padding-bottom: 0;  
+    }
     .bg-4 .title {
         padding-bottom: 0;
     }
     .bg-4 .bajada {
         min-height: 100px;
     }
-    #modal-receta {
+    #modal-receta, #modal-prensa {
         padding: 20px;
         padding-bottom: 70px;
     }
-    #modal-receta .title {
+    #modal-receta .title, #modal-prensa .title {
         font-size: 30px;
     }
-    #modal-receta .subtitle {
+    #modal-receta .subtitle, #modal-prensa .subtitle {
         font-size: 18px; 
     }
-    #modal-receta .bajada, #modal-receta .lista-ingredientes  {
+    #modal-receta .bajada, #modal-receta .lista-ingredientes, #modal-prensa .bajada  {
         font-size: 14px;
         line-height: 27px;
     }
-    #modal-receta .next {
+    #modal-receta .next, #modal-prensa .next {
         text-align: center;
         padding-top: 70px;
         position: relative;
         right: 0;
+    }
+    #modal-receta .next a, #modal-prensa .next a {
+        background-size: 13px;
+    }
+    .bg-5 .box-img.logo {
+        display: none;
+    }
+    .bg-5 form {
+        margin-bottom: 50px;
+    }
+    .content-follow {
+        margin-top: 50px;
+    }
+    .bg-green .mt, .bg-red .mt  {
+        margin-top: 50px;
+    }
+    .bg-home-2.prensa.tienda .box-numbers.dark {
+        display: block;
     }
     footer p {
         margin: 10px 0;

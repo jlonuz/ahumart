@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ahumart Patagonia</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -15,65 +16,15 @@
     <header>
         <h1>header</h1>
     </header>
-    <section class="bg-4 prensa">
-        <div class="container">
-            <h1 class="title text-center">Prensa</h1>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="box-img border">
-                        <img src="assets/img/paula-gourmet.png" alt="">
-                    </div>
-                    <div class="receta">
-                        <h3 class="subtitle text-center">Mercado Paula</h3>
-                        <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                        <div class="box-link text-center">
-                            <a href="#" data-src="#modal-prensa" data-fancybox>Ver</a>
-                        </div>    
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="box-img border">
-                        <img src="assets/img/sernatur.png" alt="">
-                    </div>
-                    <div class="receta">
-                        <h3 class="subtitle text-center">Emporio de feria Sernatur</h3>
-                        <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna al.</p>
-                        <div class="box-link text-center">
-                            <a href="#" data-src="#modal-prensa" data-fancybox>Ver</a>
-                        </div>    
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="box-img border">
-                        <img src="assets/img/prensa-3.png" alt="">
-                    </div>
-                    <div class="receta">
-                        <h3 class="subtitle text-center">Mercado Paula</h3>
-                        <p class="bajada">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                        <div class="box-link text-center">
-                            <a href="#" data-src="#modal-prensa" data-fancybox>Ver</a>
-                        </div>   
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-numbers">
-                        <div class="number">
-                            <a href="#">1</a>
-                        </div>
-                        <div class="number">
-                            <a href="#">2</a>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </div> 
+    <section class="slider-home">
+        <div><img src="assets/img/banner.png" alt=""></div>
+        <div><img src="assets/img/banner.png" alt=""></div>
+        <div><img src="assets/img/banner.png" alt=""></div>
     </section>
         
-    <section class="bg-home-2 prensa">
+    <section class="bg-home-2 prensa tienda">
         <div class="container">
-            <h1 class="title text-center">Galería</h1>
+            <h1 class="title text-center">Alguno de nuestros productos</h1>
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="box-img border galeria">
@@ -122,6 +73,26 @@
             </div>
         </div> 
     </section>
+    <section class="bg-red">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 mt">  
+                        <h3 class="subtitle text-uppercase">Visitanos</h3>
+                        <p>Ignacio Serrano #133<br>Coyhaique, Región de Aysén</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 mt">
+                        <h3 class="subtitle text-uppercase">Horarios</h3>
+                        <p>Lun a Vie 09 - 14hrs. | 15-20hrs. <br>Sábado 09-14 hrs. | 15-20hrs. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+           
+            <div id="map"></div>
+            <script src="assets/js/main.js"></script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvxAUQDlGiF-p4RrwV77pelHBk8clvZLg&callback=initMap">
+            </script>
     <div id="modal-prensa" style="display: none;">
         <h1 class="title text-center">Noticia #</h1>
         <div class="box-img">
@@ -160,6 +131,7 @@
     </footer> 
     <script src="assets/js/jquery-3.2.1.js"></script>
     <script src="assets/js/jquery.fancybox.js"></script>
+    <script scr="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>  
